@@ -1,0 +1,21 @@
+.heading {
+  background-color: $brand-primary;
+  border: 0;
+  height: 5px;
+  margin-bottom: 30px;
+  width: 150px;
+}
+
+.media {
+  margin-bottom: 20px;
+
+  &-object {
+    height: 42px;
+    width: 42px;
+  }
+
+  @media (max-width: $screen-sm-min) {
+    border: 1px solid $gray-lighter;
+    padding: 20px;
+  }
+}
