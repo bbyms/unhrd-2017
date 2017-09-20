@@ -1,0 +1,78 @@
+.project-status-wrapper {
+  margin-top: 30px;
+  text-align: center;
+
+  .project-status-step {
+    color: #fff;
+
+    padding: 0.2em 2em;
+    display: inline-block;
+    background: #0071BC;
+    position: relative;
+    height: 30px;
+    margin: 0 7px 0 7.5px;
+    line-height: -webkit-calc(30px - .5em);
+    line-height: calc(30px - .5em);
+    font-size: .85em;
+
+    &::after {
+      content: "";
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 36px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-image: url('../images/nose.svg');
+      background-color: transparent;
+      background-size: auto 32px;
+      background-position: center center;
+      left: auto;
+      right: -36px;
+      background-position: center left;
+    }
+
+    &::before {
+      content: "";
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 36px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-size: auto 32px;
+      left: -35.5px;
+      right: auto;
+      background-image: url('../images/tail.svg');
+      background-position: center right;
+    }
+
+    &:first-of-type {
+      border-radius: 3px 0px 0px 3px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &.active {
+      background-color: #FFC34C;
+      color: #4A4A4A;
+
+      &::after {
+        background-image: url('../images/nose-active.svg');
+      }
+
+      &::before {
+        background-image: url('../images/tail-active.svg');
+      }
+    }
+  }
+}

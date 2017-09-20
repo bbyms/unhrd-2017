@@ -1,0 +1,30 @@
+.has-bg {
+  background-image: url('../images/header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.header {
+  padding: 30px 0;
+
+  &-content {
+    @media (min-width: $screen-md-min) {
+      align-items: center;
+      display: flex;
+      padding: 60px 0;
+    }
+  }
+}
+
+.navbar {
+  &-brand {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .btn {
+    margin-top: 10px;
+    width: 180px;
+  }
+}

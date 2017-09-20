@@ -1,0 +1,10 @@
+.unhrd-separator {
+  background: $brand-primary;
+  height: 60px;
+
+  &:nth-child(2) {
+    background-color: #154f83;
+    border-left: 30px solid #4aa8fd;
+    border-bottom: 60px solid #154f83;
+  }
+}
