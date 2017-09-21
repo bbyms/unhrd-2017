@@ -15,7 +15,15 @@
   }
 
   @media (max-width: $screen-sm-min) {
-    border: 1px solid $gray-lighter;
+    border: 1px solid #D4D0D6;
     padding: 20px;
+
+    &-body {
+      vertical-align: middle;
+
+      h4 {
+        margin-bottom: 0;
+      }
+    }
   }
 }
