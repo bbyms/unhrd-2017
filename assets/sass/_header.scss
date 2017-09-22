@@ -25,6 +25,13 @@
 
   .btn {
     margin-top: 10px;
-    width: 180px;
+
+    &-group {
+      margin-left: 10px;
+    }
   }
+}
+
+.btn-outline {
+  @include button-variant(#fff, transparent, #fff);
 }
